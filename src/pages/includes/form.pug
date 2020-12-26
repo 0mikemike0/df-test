@@ -1,0 +1,11 @@
+article.query-form
+  .form-container
+    form.form(action="POST")
+      h2.form__title Задать вопрос
+      .form-wrapper
+        .input-wrapper
+          input.form-input(type="text" name="full-name" placeholder="Ваше имя")
+          input.form-input(type="tel" name="tel" placeholder="Телефон")
+          input.form-input(type="email" name="email" placeholder="E-mail")
+        textarea(name="message", cols="30", rows="10" placeholder="Сообщение")
+        button.form-button(type="submit") Отправить вопрос

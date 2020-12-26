@@ -1,0 +1,52 @@
+@import "../../local_modules/normalize.css/normalize";
+@import"../utils/fonts.scss";
+@import "../utils/variables";
+@import "../mixins/media";
+@import "../mixins/hidden";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1320px;
+  min-width: 375px;
+  font-family: 'Roboto';
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 1);
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+  &:active {
+    filter: contrast(80%);
+  }
+
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 11px;
+}
